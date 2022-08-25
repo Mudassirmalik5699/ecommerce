@@ -21,7 +21,7 @@ class AdminController extends Controller
         $data->save();
         return back()->with('message', 'Category Added Successfully');
     }
-    // delete category function 
+    // delete category function
     public function delete_category($id){
         $data=Category::find($id);
         $data->delete();
