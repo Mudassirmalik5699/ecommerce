@@ -13,3 +13,29 @@
 <link rel="stylesheet" href="admin/assets/css/style.css">
 <!-- End layout styles -->
 <link rel="shortcut icon" href="admin/assets/images/favicon.png" />
+<!-- Custom css for category blade -->
+<style>
+    .div_center {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .h2_font {
+        font-size: 40px;
+        padding-bottom: 40px
+    }
+
+    .input_color {
+        color: black;
+    }
+    /* category table css */
+    .center{
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        margin-top: 30px;
+        border: 2px solid white ;
+
+    }
+</style>
+
