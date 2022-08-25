@@ -2,30 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\Controller
 class AdminController extends Controller
 {
-    // show category in function
     public function view_category()
     {
-        $data= Category::all();
-        return view('admin.category',compact('data'));
+        return view('admin.category');
     }
-    // Add category Function
     public function add_category(Request $request)
     {
         $data = new Category;
         $data->category_name = $request->category;
         $data->save();
-        return back()->with('message', 'Category Added Successfully');
-    }
-    // delete category function
-    public function delete_category($id){
-        $data=Category::find($id);
-        $data->delete();
-        return redirect()->back()->with('message', 'Category Deleted Successfully');
-
+        return back()->with('message', 'Your Category has added in The List!');
     }
 }
